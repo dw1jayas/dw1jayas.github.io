@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+	<head>
+		<meta charSet="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Beranda Dw1jayastron</title>
+		<style>
+			@font-face {
+				font-family: "Pixelated MS Sans Serif";
+				src: url("fonts/ms_sans_serif.woff") format("woff");
+				src: url("fonts/ms_sans_serif.woff2") format("woff2");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: "Pixelated MS Sans Serif";
+				src: url("fonts/ms_sans_serif_bold.woff") format("woff");
+				src: url("fonts/ms_sans_serif_bold.woff2") format("woff2");
+				font-weight: bold;
+				font-style: normal;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				background: #262d56;
+			}
+			.pixelated {
+				-ms-interpolation-mode: nearest-neighbor;
+				image-rendering: pixelated;
+			}
+			.windowv1 {
+				font-family: "Pixelated MS Sans Serif";
+				background: #fff;
+				border: 2px solid #58a3ff;
+			}
+			.title-barv1 {
+				background: #55f;
+				border-bottom: 2px solid #58a3ff;
+			}
+			.title-bar-textv1 {
+				color: #fff;
+				font-weight: 700;
+				letter-spacing: 0;
+			}
+			table {
+				width: 100%;
+			}
+			h1 {
+				width:fit-content;
+				background:#000;
+				margin: 0;		
+			}
+			.topnav {
+				overflow: hidden;
+				background: url(gambar/biru1.jpg);
+				background-size: cover;
+			}
+			.topnav a {
+				float: left;
+				color: black;
+				text-decoration: none;
+				padding: 5px;
+			}
+			.topnav a:hover {
+				background-color: #020827;
+				color: white;
+			}
+			.window-body {
+				margin: 8px;
+			}
+			p {
+				line-height: 1.5;
+			}
+			.pemisah {
+				height: 16px;
+			}
+			.clear {
+				clear:both;
+			}
+			hr {
+				width: 25%;
+				size: 3;
+			}
+			.window98 {
+				font-family: "Pixelated MS Sans Serif";
+				background: silver;
+				box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+				padding: 3px;
+			}
+			.title-bar98 {
+				background: linear-gradient(90deg,navy,#1084d0);
+				display: flex;
+				justify-content: space-between;
+				padding: 3px 2px 3px 3px;
+			}
+			.title-bar-text98 {
+				color: #fff;
+				font-weight: 700;
+				letter-spacing: 0;
+				margin-right: 24px;
+				padding-left: 3px;
+			}
+			.windowXP {
+				font-family: Tahoma, sans-serif;
+				box-shadow: inset -1px -1px #00138c,inset 1px 1px #0831d9,inset -2px -2px #001ea0,inset 2px 2px #166aee,inset -3px -3px #003bda,inset 3px 3px #0855dd;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				padding: 0 0 3px;
+				-webkit-font-smoothing: antialiased;
+				background: #ece9d8;
+			}
+			.title-barXP {
+				background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+				padding: 3px 5px 3px 3px;
+				border-top: 1px solid #0831d9;
+				border-left: 1px solid #0831d9;
+				border-right: 1px solid #001ea0;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 7px;
+				text-shadow: 1px 1px #0f1089;
+			}
+			.title-bar-textXP {
+				font-weight: 700;
+				color: #fff;
+				letter-spacing: 0;
+				margin-right: 24px;
+				padding-left: 3px;
+			}
+			.window7 {
+				font-family: Segoe UI,sans-serif;
+				box-shadow: 0 0 5px 1px rgba(0,0,0,.6);
+				border: 1px solid rgba(0,0,0,.6);
+				border-radius: 6px;
+				position: relative;
+			}
+			.window7::before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				border-radius: 6px;
+				background: linear-gradient(transparent 20%,hsla(0,0%,100%,.7) 40%,transparent 41%),linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4;
+			}
+			.window7 > .title-bar7 {
+				border: 0;
+				box-shadow: inset 0 .5px #fff;
+			}
+			.title-bar7 {
+				box-shadow: inset 0 0 .5px .5px #fff;
+				border: 1px solid rgba(0,0,0,.6);
+				border-radius: 6px 6px 0 0;
+				padding: 6px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background: linear-gradient(90deg,hsla(0,0%,100%,.4),rgba(0,0,0,.1),hsla(0,0%,100%,.2)),linear-gradient(55deg,transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.1) 50%,transparent 53%),#4580c4;
+			}
+			.title-bar-text7 {
+				color: #000;
+				letter-spacing: 0;
+				line-height: 15px;
+				text-shadow: 0 0 10px #fff,0 0 10px #fff,0 0 10px #fff,0 0 10px #fff,0 0 10px #fff,0 0 10px #fff,0 0 10px #fff,0 0 10px #fff;
+			}
+			.window-body7 {
+				margin: 0 6px 6px;
+				padding: 6px;
+				border: 1px solid rgba(0,0,0,.6);
+				background: #f0f0f0;
+				box-shadow: 0 0 1px .5px #fff;
+			}
+			.window7.glass::before {
+				opacity: .5;
+				filter: brightness(1.4);
+			}
+			.window7.glass > .title-bar7 {
+				background: linear-gradient(55deg,transparent 8%,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.3) 30%,rgba(0,0,0,.1) 32%,rgba(0,0,0,.3) 55%,transparent 57%,hsla(0,0%,100%,.3) 70%,transparent 72%);
+			}
+			.status-bar {
+				margin: -6px 6px 6px;
+				padding: 3px;
+				background: #f0f0f0;
+				border: 1px solid rgba(0,0,0,.6);
+				border-top: 0;
+				box-shadow: 0 .5px 1px .5px #fff;
+				display: flex;
+			}
+			.status-bar-field {
+				border-right: 1px solid #cfcfcf;
+				padding: 2px 3px;
+				margin: 0;
+				flex-grow: 1;
+				box-shadow: inset -1px -1px #dfdfdf,inset 1px 1px grey;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="windowv1">
+			<div class="title-barv1">
+				<div class="title-bar-textv1">
+					<table>
+						<tbody>
+							<tr>
+								<td align="left"><img alt="" class="pixelated" src="gambar/button_left.png"/></td>
+								<td align="center"><h1 style="">Dwijayastron</h1></td>
+								<td align="right"><img alt="" class="pixelated" src="gambar/button_right.png"/></td>
+							</tr>
+							<tr bgcolor="#ff5">
+								<td colspan="3">
+									<div class="topnav">
+										<a href="https://dw1jayas.github.io">Beranda</a>
+										<a href="#">#</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="window-body">
+				<h2>Apa Itu Dwijayastron?</h2>
+				<p>Dwijayastron adalah situs yang dikelola oleh aku, <a href="https://github.com/dw1jayas">Dw1jayas</a>, sejak 13 Maret 2022. Situs ini dihosting di <a href="https://github.com/dw1jayas">Github</a> dan dapat diakses melalui <a href="https://dw1jayas.github.io">https://dw1jayas.github.io</a></p>
+			</div>
+		</div>
+		<div class="pemisah"></div>
+		<div class="window98">
+			<div class="title-bar98">
+				<div class="title-bar-text98">
+					<h2>Siapa Itu Dw1jayas?</h2>
+				</div>
+			</div>
+			<div class="window-body">
+				<p>Halo! Panggil saja aku, Dw1jayas. Lahir dan besar di kota Jakarta, Indonesia yang makin sumpek dengan segala aktivitasnya. Dengan pengetahuan mengenai membangun situs yang minim, aku membuat situs ini, Dwijayastron dengan tampil yang sederhana dan banyak kekurangan.</p>
+			</div>
+		</div>
+		<div class="pemisah"></div>
+		<div class="windowXP">
+			<div class="title-barXP">
+				<div class="title-bar-textXP">
+					<h2>Konten Dwijayastron</h2>
+				</div>
+			</div>
+			<div class="window-body">
+				<p>Konten yang ada di Dwijayastron sangat beragam alias tidak hanya berfokus pada satu pembahasan saja.</a>
+			</div>
+		</div>
+		<div class="pemisah"></div>
+		<div class="window7">
+			<div class="title-bar7">
+				<div class="title-bar-text7">
+					<h2>Pranala</h2>
+				</div>
+			</div>
+			<div class="window-body7">
+				<p>Beberapa pranala berikut ini sangat membantu ku dalam beragam hal, yaitu:</p>
+				<ul>
+					<li><a href="https://win1.krnl386.com/">Windows 1.0</a></li>
+					<li><a href="https://github.com/jdan/98.css">98.css</a></li>
+					<li><a href="https://github.com/botoxparty/XP.css">XP.css</a></li>
+					<li><a href="https://github.com/khang-nd/7.css">7.css</a></li>
+					<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="pemisah"></div>
+		<div class="window7 glass">
+			<div class="title-bar7">
+				<div class="title-bar-text7">
+					<h2>Blog</h2>
+				</div>
+			</div>
+			<div class="window-body7">
+				<p>Posting Blog:</p>
+			</div>
+		</div>
+		<div class="pemisah"></div>
+		<div class="status-bar">
+            <p class="status-bar-field">2022</p>
+            <p class="status-bar-field">Dw1jayas</p>
+            <p class="status-bar-field">Dwijayastron</p>
+		</div>
+	</body>
+</html>
